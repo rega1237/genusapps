@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Genus Apps | Desarrollo de Software a Medida en Houston</title>
+    <meta
+      name="description"
+      content="En Genus Apps diseñamos software a medida, ofrecemos consultoría TI y análisis de datos para pymes en Houston. Impulsa tu negocio con tecnología que funciona."
+    />
+    <link rel="canonical" href="https://www.genusapps.com/" />
+
+    <meta
+      property="og:title"
+      content="Genus Apps | Desarrollo de Software a Medida"
+    />
+    <meta
+      property="og:description"
+      content="Soluciones tecnológicas personalizadas para hacer crecer tu empresa. Desde desarrollo de software hasta análisis de datos."
+    />
+    <meta
+      property="og:image"
+      content="https://www.genusapps.com/src/assets/hero.png"
+    />
+    <meta property="og:url" content="https://www.genusapps.com/" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="hidden md:flex md:flex-col lg:flex-row justify-between items-center px-10 py-3"
+      >
+        <a href="/" class="text-3xl font-bold">
+          <img
+            class="w-[150px]"
+            src="./src/assets/logo.png"
+            alt="Logo de Genus Apps"
+          />
+        </a>
+
+        <ul class="flex gap-4 items-center">
+          <a
+            href="#services"
+            class="text-secondary hover:text-accent hover:underline hover:font-bold underline-offset"
+            >Servicios</a
+          >
+          <a
+            href="#about"
+            class="text-secondary hover:text-accent hover:underline hover:font-bold underline-offset"
+            >Sobre nosotros</a
+          >
+          <a
+            href="#testimonials"
+            class="text-secondary hover:text-accent hover:underline hover:font-bold underline-offset"
+            >Testimonios</a
+          >
+          <a
+            href="https://wa.me/584149675141?"
+            class="p-3 rounded-lg bg-accent font-bold text-white hover:bg-accent-hover transition-colors cursor-pointer"
+          >
+            Contáctanos
+        </a>
+        </ul>
+      </nav>
+      <nav class="md:hidden flex justify-between items-center px-10 py-3">
+        <a href="/" class="text-3xl font-bold">
+          <img
+            class="w-[150px]"
+            src="./src/assets/logo.png"
+            alt="Logo de Genus Apps"
+          />
+        </a>
+        <button
+          id="mobile-menu-button"
+          class="text-secondary focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="hidden md:hidden bg-white px-10 py-3">
+        <ul class="flex flex-col gap-4 items-center">
+          <a
+            href="#services"
+            class="text-secondary hover:text-accent hover:underline hover:font-bold underline-offset"
+            >Servicios</a
+          >
+          <a
+            href="#about"
+            class="text-secondary hover:text-accent hover:underline hover:font-bold underline-offset"
+            >Sobre nosotros</a
+          >
+          <a
+            href="#testimonials"
+            class="text-secondary hover:text-accent hover:underline hover:font-bold underline-offset"
+            >Testimonios</a
+          >
+          <a
+            href="https://wa.me/584149675141?"
+            class="p-3 rounded-lg bg-accent font-bold text-white hover:bg-accent-hover transition-colors"
+          >
+            Contáctanos
+          </a>
+        </ul>
+      </div>
+    </header>
+
+    <main class="w-[80%] mx-auto">
+      <section
+        class="relative mt-4 h-[500px] rounded-lg mx-auto overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-cover bg-center z-0"
+          style="background-image: url(./src/assets/hero.png)"
+        ></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"
+        ></div>
+        <div
+          class="relative w-full h-full flex flex-col justify-end pb-10 pl-4 md:pl-10 z-20"
+        >
+          <div class="md:w-[70%]">
+            <h1
+              class="text-3xl md:text-5xl font-extrabold text-white leading-tight"
+            >
+              Impulsa tu <span class="text-accent">negocio</span> con soluciones
+              a la medida
+            </h1>
+            <p class="text-white/90 mt-4 md:text-lg max-w-2xl">
+              En Genus Apps, diseñamos tecnología que se adapta a tus
+              necesidades reales. Nos enfocamos en tu tranquilidad, entregando
+              software que funciona desde el primer día.
+            </p>
+            <a
+              href="https://wa.me/584149675141?"
+              class="inline-block mt-6 px-8 py-3 rounded-lg bg-accent text-white font-bold hover:bg-accent-hover transition-colors"
+            >
+              Contáctanos Ahora
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="py-16">
+        <h2 class="text-3xl text-primary font-bold text-center">
+          Soluciones tecnológicas completas para tu negocio
+        </h2>
+        <p class="text-secondary text-center max-w-3xl mx-auto mt-4">
+          Creamos herramientas digitales que te ayudan a organizar, automatizar
+          y hacer crecer tu empresa. Ya sea que trabajes en construcción, ventas
+          o servicios, desarrollamos sistemas fáciles de usar que realmente
+          resuelven tus problemas del día a día.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-8">
+          <div
+            class="bg-light-bg p-6 rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+          >
+            <div
+              class="w-[70px] h-[70px] bg-accent/10 rounded-lg flex items-center justify-center mb-4"
+            >
+              <img
+                src="./src/assets/svg_1.svg"
+                alt="Ícono de desarrollo de software a medida"
+                class="w-10 h-10"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-primary">
+              Desarrollo de Software a Medida
+            </h3>
+            <p class="text-secondary mt-2">
+              Creamos aplicaciones y sistemas desde cero, adaptados 100% a cómo
+              funciona tu negocio.
+            </p>
+          </div>
+          <div
+            class="bg-light-bg p-6 rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+          >
+            <div
+              class="w-[70px] h-[70px] bg-accent/10 rounded-lg flex items-center justify-center mb-4"
+            >
+              <img
+                src="./src/assets/svg_2.svg"
+                alt="Ícono de consultoría en tecnología"
+                class="w-10 h-10"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-primary">
+              Consultoría en Tecnología
+            </h3>
+            <p class="text-secondary mt-2">
+              Te ayudamos a tomar decisiones tecnológicas con sentido práctico,
+              sin complicaciones innecesarias.
+            </p>
+          </div>
+          <div
+            class="bg-light-bg p-6 rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+          >
+            <div
+              class="w-[70px] h-[70px] bg-accent/10 rounded-lg flex items-center justify-center mb-4"
+            >
+              <img
+                src="./src/assets/svg_3.svg"
+                alt="Ícono de análisis de datos"
+                class="w-10 h-10"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-primary">Análisis de Datos</h3>
+            <p class="text-secondary mt-2">
+              Convertimos tus datos en información útil para que tomes
+              decisiones más inteligentes y seguras.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-16">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-1/2">
+            <h2 class="text-3xl text-primary font-bold mb-4">
+              Innovamos para ayudarte a crecer
+            </h2>
+            <p class="text-secondary text-lg leading-relaxed mb-4">
+              Genus Apps nace de la colaboración entre dos hermanos con un
+              objetivo común: facilitar el trabajo de las pequeñas empresas. Uno
+              con la mente en el desarrollo, el otro enfocado en entender a las
+              personas. Juntos, combinamos tecnología y trato humano para darte
+              herramientas que realmente aporten valor.
+            </p>
+            <p class="text-secondary text-lg leading-relaxed mb-4">
+              Nos enfocamos en entender qué necesitas hoy y en construir una
+              solución que te funcione mañana. Trabajamos contigo de cerca,
+              escuchamos tus ideas y adaptamos cada sistema para que encaje con
+              tu realidad.
+            </p>
+            <p class="text-secondary text-lg leading-relaxed">
+              Nuestro lema es claro:
+              <span class="font-bold text-primary"
+                >“Si no te hace la vida más fácil, no es una solución.”</span
+              >
+            </p>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              src="./src/assets/about_desktop.png"
+              alt="Equipo de Genus Apps colaborando en un proyecto de innovación"
+              class="rounded-lg shadow-xl justify-self-center"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="py-16 bg-light-bg overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-12">
+              <h2 class="text-3xl md:text-4xl text-primary font-bold mt-2">Lo que opinan nuestros clientes</h2>
+              <p class="text-secondary max-w-2xl mx-auto mt-4">
+                  Escucha a quienes ya confiaron en nosotros y comprobaron que nuestro mayor compromiso es con tu satisfacción.
+              </p>
+          </div>
+      
+          <div class="swiper testimonials-swiper pb-16">
+            <div class="swiper-wrapper py-4">
+              
+              <div class="swiper-slide h-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 h-full flex flex-col justify-between">
+                  <div>
+                    <div class="flex text-accent text-xl mb-4">★★★★★</div>
+                    <blockquote class="text-secondary text-lg leading-relaxed mb-6 italic">"Genus Apps transformó nuestra campaña en Facebook para navidad con su Landing Page. Su landing page engancho a nuestros targets generande muchos leads."</blockquote>
+                  </div>
+                  <div class="flex items-center mt-auto">
+                    <div class="w-12 h-12 bg-gradient-to-br from-[#00D1AB] to-teal-400 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">LR</div>
+                    <div>
+                      <h4 class="font-bold text-primary">Laremz Ramonez</h4>
+                      <p class="text-gray-500 text-sm">CEO, 3R Company</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide h-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 h-full flex flex-col justify-between">
+                  <div>
+                    <div class="flex text-accent text-xl mb-4">★★★★★</div>
+                    <blockquote class="text-secondary text-lg leading-relaxed mb-6 italic">"Genus Apps desarrollo mi web y me encanta! 100% recomendado Calidad/Precio"</blockquote>
+                  </div>
+                  <div class="flex items-center mt-auto">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">IF</div>
+                    <div>
+                      <h4 class="font-bold text-primary">Irina Faneite</h4>
+                      <p class="text-gray-500 text-sm">Psicologa</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="swiper-slide h-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 h-full flex flex-col justify-between">
+                  <div>
+                    <div class="flex text-accent text-xl mb-4">★★★★★</div>
+                    <blockquote class="text-secondary text-lg leading-relaxed mb-6 italic">"Rafael cumplió todas nuestras expectativas en el desarrollo de la app para nuestro negocio, creando una herramienta que se ajusta perfectamente an nuestras necesidades."</blockquote>
+                  </div>
+                  <div class="flex items-center mt-auto">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">AN</div>
+                    <div>
+                      <h4 class="font-bold text-primary">Annabel Nunez</h4>
+                      <p class="text-gray-500 text-sm">Directora, Approved</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="swiper-slide h-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 h-full flex flex-col justify-between">
+                  <div>
+                    <div class="flex text-accent text-xl mb-4">★★★★★</div>
+                    <blockquote class="text-secondary text-lg leading-relaxed mb-6 italic">"Trabajar con Genus Apps fue un cambio radical. Entendieron nuestra visión y entregaron una solución que escaló con nuestro crecimiento."</blockquote>
+                  </div>
+                  <div class="flex items-center mt-auto">
+                    <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">CT</div>
+                    <div>
+                      <h4 class="font-bold text-primary">Claudia Toledo</h4>
+                      <p class="text-gray-500 text-sm">Fundador, MCM Company</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="swiper-slide h-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 h-full flex flex-col justify-between">
+                  <div>
+                    <div class="flex text-accent text-xl mb-4">★★★★★</div>
+                    <blockquote class="text-secondary text-lg leading-relaxed mb-6 italic">"Genus Apps transformó nuestras operaciones. Su software a medida aumentó nuestra eficiencia en un 300% y nos ahorró incontables horas."</blockquote>
+                  </div>
+                  <div class="flex items-center mt-auto">
+                    <div class="w-12 h-12 bg-gradient-to-br from-[#00D1AB] to-teal-400 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">SM</div>
+                    <div>
+                      <h4 class="font-bold text-primary">Miguel Hernandez</h4>
+                      <p class="text-gray-500 text-sm">CEO, Roofing Hernandez</p>
+                    </div>
+                  </div>
+                </div>
+              </div>      
+            </div>
+            
+            <div class="swiper-button-next text-accent"></div>
+            <div class="swiper-button-prev text-accent"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-20 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
+          ¿Tienes una idea o un problema que resolver?
+        </h2>
+        <p class="text-lg text-secondary mb-8">
+          Hablemos. Estamos aquí para escucharte y ayudarte a encontrar la mejor
+          solución.
+        </p>
+        <a
+          href="https://wa.me/584149675141?"
+          class="inline-block px-8 py-3 rounded-lg bg-accent text-white font-bold hover:bg-accent-hover transition-colors"
+        >
+          Contáctanos Ahora
+        </a>
+      </section>
+    </main>
+
+    <footer class="bg-[#18cb96] text-white py-12">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-4">
+              <img
+                class="w-[150px]"
+                src="./src/assets/logo_footer.svg"
+                alt="Genus Apps logo en el pie de página"
+              />
+            </h3>
+            <p class="text-sm leading-relaxed mb-4">
+              Genus Apps ofrece software a medida, consultoría TI y análisis de
+              datos para potenciar el crecimiento de tu negocio. Con sede en
+              Houston, nos enfocamos en soluciones prácticas y fáciles de usar.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Contacto</h3>
+            <ul class="text-sm space-y-2">
+              <li class="flex items-start">
+                <span>11211 Katy Fwy, Houston, TX 77079</span>
+              </li>
+              <li>
+                <a href="mailto:companygenus@gmail.com" class="hover:underline"
+                  >companygenus@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="https://wa.me/584149675141?" class="hover:underline"
+                  >+1 (832) 469-0154</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Enlaces Rápidos</h3>
+            <ul class="text-sm space-y-2">
+              <li>
+                <a href="#services" class="hover:underline"
+                  >Desarrollo de Software</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:underline">¿Quienes somos?</a>
+              </li>
+              <li>
+                <a href="#testimonials" class="hover:underline">Testimonios</a>
+              </li>
+              <li><a href="https://wa.me/584149675141?" class="hover:underline">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-white/20 text-center text-sm">
+          <p>&copy; 2025 Genus Apps. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

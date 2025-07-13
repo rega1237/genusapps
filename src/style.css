@@ -1,0 +1,48 @@
+:root {
+  margin: 0;
+  box-sizing: border-box;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import "tailwindcss";
+
+@theme {
+  /* 1. Configuración de la fuente */
+  --font-family-sans: "Inter", sans-serif;
+
+  /* 2. Paleta de colores minimalista */
+  --color-primary: #0f1717; /* Negro suave para texto principal */
+  --color-secondary: #4b5563; /* Gris para párrafos */
+  --color-accent: #00d1ab; /* Tu verde característico */
+  --color-accent-hover: #00b894; /* Variante para hover */
+  --color-light-bg: #f9fafb; /* Fondo claro para secciones */
+  --color-white: #ffffff;
+}
+
+/* Opcional: Aplicar un estilo base global */
+body {
+  font-family: theme(font-family-sans);
+  color: theme(--color-secondary);
+}
+
+.underline-offset {
+  text-underline-offset: 0.2em;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-prev,
+.carousel-next {
+  z-index: 10;
+}
